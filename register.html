@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/KiemTraHCJS/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <p>
+            <h2>Thanh xuân là để kiếm tiền làm thứ mình muốn.</h2>
+        </p>
+        <span class="error-msg" id="total-msg"></span>
+    </header>
+    <form class="form" name="form">
+        <h1>Đăng Ký Thông Tin Người Dùng</h1>
+        <!-- Họ Và Tên  -->  
+        <div class="form-group">
+            <label>Họ Và Tên:</label>
+            <input type="text" class="form-group-input" name="fullname" placeholder="Vui Lòng Nhập Vào Họ Và Tên ">
+            <span class="error-msg"></span>
+        </div>
+        <!-- Email -->
+        <div class="form-group">
+            <label>Email:</label>
+            <input type="email" class="form-group-input" name="email" placeholder="Vui Lòng Nhập Vào Email">
+            <span class="error-msg"></span>
+        </div>
+        <!-- Phone  -->
+        <div class="form-group">
+            <label>Phone:</label>
+            <input type="text" class="form-group-input" name="phone" placeholder="Vui Lòng Nhập Vào MobilePhone">
+            <span class="error-msg"></span>
+        </div>
+        <!-- Gender -->
+        <div class="form-group">
+            <label>Gender:</label>
+            <select id="gender" name="gender" >
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <!-- Sở Thích  -->
+        <div class="form-group">
+            <label>Sở Thích:</label><br/>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Sport">
+            <label for="vehicle1">Sport</label><br/>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Film">
+            <label for="vehicle2"> Film</label><br/>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Book">
+            <label for="vehicle3"> Reads Book</label><br/>
+            <input type="checkbox" id="vehicle4" name="vehicle4" value="Music">
+            <label for="vehicle3"> Music</label><br/>
+            <input type="checkbox" id="vehicle5" name="vehicle5" value="Other">
+            <label for="vehicle3"> Other</label><br/>
+        </div>
+        <!-- Giới Thiệu Bản Thân -->
+        <div class="form-group">
+            <label>Giới Thiệu Bản Thân:</label>
+            <textarea id="form-control" class="form-group-textarea" placeholder="Nhập vào đây giới thiệu về bản thân mình" >
+
+            </textarea>
+            
+        </div>
+        <div class="form-group">
+            <input type="button" value="submit" id="btnSubmit">
+            <input type="reset" class="reset">
+        </div>
+    </form>
+    <footer class="footer">
+        
+        Họ Và Tên:VÕ VĂN VIỆT<br/>
+        Email:Vietvvth2107012@fpt.edu.vn<br/>
+        Lớp:T2108A<br/>
+    </footer>
+    <script src="/KiemTraHCJS/js/check.js"></script>
+</body>
+</html>
